@@ -4,7 +4,6 @@
 apt-get update
 
 # 安装必需的软件包
-apt-get install wget -y
 apt install sudo -y
 sudo apt install curl -y
 sudo apt-get install ufw -y
