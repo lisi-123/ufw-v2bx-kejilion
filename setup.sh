@@ -15,7 +15,6 @@ sed -i 's/^IPV6=yes/IPV6=no/' /etc/default/ufw
 # 配置防火墙规则
 sudo ufw allow ssh
 sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
 sudo ufw allow 44443/tcp
 sudo ufw allow 33332/tcp
 sudo ufw allow 35500:35600/udp
