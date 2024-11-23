@@ -3,7 +3,7 @@
 您可以通过以下命令一键下载并执行安装脚本：
 
 ```bash
-wget -O setup.sh https://raw.githubusercontent.com/Travelers2024/ufw-v2bx-kejilion/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/Travelers2024/ufw-v2bx-kejilion/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 此命令将执行以下操作：
