@@ -8,9 +8,9 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/Tr
 
 此命令将执行以下操作：
 
-安装ufw防火墙并放行某些端口
-安装xiao佬的v2bx
-安装科技lion的脚本
+安装ufw防火墙并放行某些端口 
+安装xiao佬的v2bx 
+安装科技lion的脚本 
 
 
 ## 一键解锁warp
