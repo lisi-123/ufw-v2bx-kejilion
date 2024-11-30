@@ -6,4 +6,4 @@ wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh <<< 
 # 替换配置文件 sing_origin.json
 wget -N https://raw.githubusercontent.com/Travelers2024/ufw-v2bx-kejilion/main/sing_origin.json -P /etc/V2bX/
 
-echo "已自动配置warp解锁"
+echo "已自动配置warp解锁，重启v2bx生效"
