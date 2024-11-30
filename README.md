@@ -29,3 +29,8 @@ wget -O setup1.sh https://raw.githubusercontent.com/Travelers2024/ufw-v2bx-kejil
 自动替换v2bx的路由文件
 
 （仅供自用，本人习惯使用xiao版v2bx，内核选择sing-box，其他版本大概无效）
+
+小白遇到各种 command not found 请先执行
+```bash
+apt-get update; apt-get install wget -y; apt install sudo -y; sudo apt install curl -y
+```
