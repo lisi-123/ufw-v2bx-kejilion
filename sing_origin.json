@@ -25,15 +25,22 @@
       {
         "domain_regex": [
             "(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
-            "(.+.|^)(360|so).(cn|com)",
+            "(.+.|^)(so).(cn|com)",
+            "(.+.|^)(qq).(cn|com)",
+            ".(wexin).",
+            "(.+.|^)(alipay).(cn|com)",
+            "(.+.|^)(taobao).(cn|com)",
+            "(.+.|^)(jd).(cn|com)",
+            "(.+.|^)(pinduoduo|yangkeduo).(cn|com)",
+            "(.+.|^)(360).(cn|com|net)",
+            "(.+.|^)(douyin).(cn|com)",
             "(Subject|HELO|SMTP)",
             "(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)",
             "(^.@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)",
             "(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
             "(..||)(dafahao|mingjinglive|botanwang|minghui|dongtaiwang|falunaz|epochtimes|ntdtv|falundafa|falungong|wujieliulan|zhengjian).(org|com|net)",
             "(ed2k|.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=|magnet:|xunlei|sandai|Thunder|XLLiveUD|bt_key)",
-            "(.+.|^)(360).(cn|com|net)",
-            "(.*.||)(guanjia.qq.com|qqpcmgr|QQPCMGR)",
+            "(.*.||)(qqpcmgr|QQPCMGR)",
             "(.*.||)(rising|kingsoft|duba|xindubawukong|jinshanduba).(com|net|org)",
             "(.*.||)(netvigator|torproject).(com|cn|net|org)",
             "(..||)(visa|mycard|gash|beanfun|bank).",
@@ -43,7 +50,6 @@
             "(.*.||)(gash).(com|tw)",
             "(.bank.)",
             "(.*.||)(pincong).(rocks)",
-            "(.*.||)(taobao).(com)",
             "(.*.||)(laomoe|jiyou|ssss|lolicp|vv1234|0z|4321q|868123|ksweb|mm126).(com|cloud|fun|cn|gs|xyz|cc)",
             "(flows|miaoko).(pages).(dev)"
         ],
@@ -52,6 +58,8 @@
       {
         "domain_regex": [
             "pixiv.net",
+            "wechat.com",
+            "wechatpay.com",
             "paramount",
             "openai.com",
             "auth0.com",
