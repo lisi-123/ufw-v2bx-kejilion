@@ -24,7 +24,7 @@ wget -O setup1.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/m
 
 此命令将执行以下操作：
 
-自动安装warp，并设置本地socks5代理
+自动安装warp，并设置本地socks5代理（默认使用40000端口，请勿占用）
 
 如果warp安装失败，请前往 https://gitlab.com/fscarmen/warp 手动安装
 
