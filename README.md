@@ -8,11 +8,15 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 此命令将执行以下操作：
 
-安装ufw防火墙并放行某些端口
+1.安装ufw防火墙并放行端口（不会用ufw防火墙请咨询chatgpt）
 
-安装xiao佬的v2bx
+tcp：80，44443，33332
 
-安装科技lion的脚本
+udp：35500:35600，50000
+
+2.安装xiao佬的v2bx
+
+3.安装科技lion的脚本
 
 
 
