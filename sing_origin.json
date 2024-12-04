@@ -52,6 +52,7 @@
       {
         "domain_regex": [
             "pixiv.net",
+            "paramount",
             "openai.com",
             "auth0.com",
             "recaptcha.net",
