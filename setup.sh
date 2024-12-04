@@ -30,8 +30,11 @@ sudo ufw --force enable
 wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh v0.0.18
 curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
-# 添加定时任务
-CRON_JOB='0 */3 * * * echo "6" | /usr/bin/v2bx'
+# 修改为上海时区
+sudo timedatectl set-timezone Asia/Shanghai
+
+# 添加定时任务（凌晨4点自动重启v2bx）
+CRON_JOB='0 4 * * * echo "6" | /usr/bin/v2bx'
 (crontab -l 2>/dev/null; echo "$CRON_JOB") | sort -u | crontab -
 
 # 输出完成信息
