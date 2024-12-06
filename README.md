@@ -14,7 +14,7 @@ tcp：22，80，44443，33332
 
 udp：35500:35600，50000
 
-2.ufw禁用ipv6（需要ipv6请咨询chatgpt如何修改ufw配置）
+2.ufw禁用ipv6
 
 3.安装xiao佬的v2bx
 
@@ -23,6 +23,12 @@ udp：35500:35600，50000
 5.修改vps时区为中国上海
 
 6.设置v2bx每天凌晨4点自动重启
+
+需要ipv6请执行：
+
+```bash
+sudo sed -i 's/^IPV6=yes/IPV6=no/' /etc/default/ufw && sudo systemctl restart ufw
+```
 
 
 <br>
