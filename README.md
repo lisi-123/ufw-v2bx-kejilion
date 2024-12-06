@@ -27,7 +27,7 @@ udp：35500:35600，50000
 需要ipv6请执行：
 
 ```bash
-sudo sed -i 's/^IPV6=yes/IPV6=no/' /etc/default/ufw && sudo systemctl restart ufw
+sudo sed -i 's/^IPV6=no/IPV6=yes/' /etc/default/ufw && sudo systemctl restart ufw
 ```
 
 
