@@ -52,6 +52,12 @@ wget -O setup1.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/m
 
 ##### 如果因为vps的ipv6导致无法下载，可以把脚本中的“wget -O”改为“wget -4”
 
+##### 或临时禁止ipv6
+
+```bash
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+```
+
 ##### 仅供自用，本人习惯使用xiao版v2bx，内核选择sing-box，其他版本大概无效
 
 xiao佬的v2bx: https://github.com/wyx2685/V2bX
