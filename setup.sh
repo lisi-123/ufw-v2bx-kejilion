@@ -15,13 +15,14 @@ sed -i 's/^IPV6=yes/IPV6=no/' /etc/default/ufw
 # 配置防火墙规则
 sudo ufw allow ssh
 sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
 sudo ufw allow 44443/tcp
 sudo ufw allow 33332/tcp
-sudo ufw allow 35500:35600/udp
+sudo ufw allow 35000:36000/udp
 sudo ufw allow 50000/udp
 
 # 设置iptables规则
-sudo iptables -t nat -A PREROUTING -p udp --dport 35500:35600 -j REDIRECT --to-port 50000
+sudo iptables -t nat -A PREROUTING -p udp --dport 35000:36000 -j REDIRECT --to-port 50000
 
 # 启用UFW防火墙
 sudo ufw --force enable
