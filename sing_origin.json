@@ -58,6 +58,7 @@
       {
         "domain_regex": [
             "pixiv.net",
+            "netflix",
             "wechat.com",
             "wechatpay.com",
             "whatsapp",
