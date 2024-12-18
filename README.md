@@ -50,9 +50,7 @@ wget -O setup1.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/m
 
 ##### 如果warp安装失败，请前往 https://gitlab.com/fscarmen/warp 手动安装
 
-##### 如果因为vps的ipv6导致无法下载，可以把脚本中的“wget -O”改为“wget -4”
-
-##### 或临时禁止ipv6
+##### 如果因为vps的ipv6导致无法下载，可以临时禁止ipv6
 
 ```bash
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
