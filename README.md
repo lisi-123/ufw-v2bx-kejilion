@@ -24,7 +24,7 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 6.设置v2bx每天凌晨4点自动重启
 
-需要ipv6请执行：
+需要ipv6请额外执行：
 
 ```bash
 sudo sed -i 's/^IPV6=no/IPV6=yes/' /etc/default/ufw && sudo systemctl restart ufw
