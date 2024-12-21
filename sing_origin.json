@@ -27,6 +27,7 @@
             "(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
             "(.+.|^)(so).(cn|com)",
             "(.+.|^)(qq).(cn|com)",
+            "(.+.|^)(myqcloud).(cn|com)",
             ".(wexin).",
             "(.+.|^)(alipay).(cn|com)",
             "(.+.|^)(taobao).(cn|com)",
