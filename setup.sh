@@ -9,9 +9,6 @@ sudo apt install curl -y
 sudo apt-get install ufw -y
 sudo apt install nano -y
 
-# 修改UFW配置文件，禁用IPv6
-sed -i 's/^IPV6=yes/IPV6=no/' /etc/default/ufw
-
 # 配置防火墙规则
 sudo ufw allow ssh
 sudo ufw allow 80/tcp
