@@ -25,6 +25,17 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 <br>
 
+## 一键设置ipv4优先
+当vps同时存在v4和v6,且v6优先时候，可能会导致安装脚本出问题
+
+执行以下脚本可一键设置ipv4优先
+
+```bash
+wget -4 -O setup.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/prefer%20ipv4.sh && chmod +x setup.sh && ./setup.sh
+```
+
+<br>
+
 ## 一键解锁warp
 
 ```bash
