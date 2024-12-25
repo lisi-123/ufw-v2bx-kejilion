@@ -14,22 +14,14 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
   &nbsp;&nbsp;&nbsp;udp：35000:36000，50000
 
-2.ufw禁用ipv6
 
-3.安装xiao佬的v2bx
+2.安装xiao佬的v2bx
 
-4.安装科技lion的脚本
+3.安装科技lion的脚本
 
-5.修改vps时区为中国上海
+4.修改vps时区为中国上海
 
-6.设置v2bx每天凌晨4点自动重启
-
-需要ipv6请额外执行：
-
-```bash
-sudo sed -i 's/^IPV6=no/IPV6=yes/' /etc/default/ufw && sudo systemctl restart ufw
-```
-
+5.设置v2bx每天凌晨4点自动重启
 
 <br>
 
