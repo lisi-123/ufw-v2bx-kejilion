@@ -10,7 +10,7 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 1.安装ufw防火墙并放行端口（不会用ufw防火墙请咨询chatgpt）
 
-  &nbsp;&nbsp;&nbsp;tcp：22，80，443，44443，33332
+  &nbsp;&nbsp;&nbsp;tcp：22，53，80，443，44443，33332
 
   &nbsp;&nbsp;&nbsp;udp：35000:36000，50000
 
