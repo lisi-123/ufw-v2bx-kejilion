@@ -23,7 +23,6 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 5.设置v2bx每天凌晨4点自动重启
 
-<br>
 
 ----------------------------------------------------------------------
 
