@@ -25,6 +25,8 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
 <br>
 
+----------------------------------------------------------------------
+
 以下是去除科技lion脚本的纯净版
 
 
