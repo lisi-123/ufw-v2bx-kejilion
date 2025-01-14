@@ -29,7 +29,7 @@ sudo iptables -t nat -A PREROUTING -p udp --dport 35000:36000 -j REDIRECT --to-p
 sudo ufw --force enable
 
 # 执行其他安装指令
-wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh v0.1.0
+wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh v0.1.4
 curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
 # 修改为上海时区
