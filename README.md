@@ -42,7 +42,7 @@ apt-get install wget -y && wget -O clean.sh https://raw.githubusercontent.com/li
 执行以下脚本可一键设置ipv4优先
 
 ```bash
-wget -4 -O setup.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/preferipv4.sh && chmod +x setup.sh && ./setup.sh
+wget -4 -O preferipv4.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/preferipv4.sh && chmod +x preferipv4.sh && ./preferipv4.sh
 ```
 
 <br>
