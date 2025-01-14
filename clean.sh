@@ -39,4 +39,4 @@ CRON_JOB='0 4 * * * echo "6" | /usr/bin/v2bx'
 (crontab -l 2>/dev/null; echo "$CRON_JOB") | sort -u | crontab -
 
 # 输出完成信息
-echo "安装完成!"
+echo "Setup complete!"
