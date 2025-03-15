@@ -32,7 +32,19 @@ fi
 
 # 重启网络服务
 echo "正在重启网络服务..."
-systemctl restart networking
+
+# 如果使用 systemd-networkd（适用于较新的系统）
+if systemctl is-active --quiet systemd-networkd; then
+  echo "使用 systemd-networkd 重启网络服务..."
+  systemctl restart systemd-networkd
+# 如果使用传统的 networking 服务（适用于旧版系统或 ifupdown）
+elif systemctl is-active --quiet networking; then
+  echo "使用 networking 重启网络服务..."
+  systemctl restart networking
+else
+  echo "找不到可用的网络服务，无法重启网络。"
+  exit 1
+fi
 
 # 提示完成
-echo "设置完成，网络服务已重启。"
+echo "设置完成，如果找不到可用的网络服务，请手动重启网络。"
