@@ -36,13 +36,13 @@ apt-get install wget -y && wget -O clean.sh https://raw.githubusercontent.com/li
 <br>
 <br>
 
-## 一键设置ipv4优先
+## 临时禁用ipv6
 当vps同时存在v4和v6,且v6优先时候，可能会导致安装脚本出问题
 
-执行以下脚本可一键设置ipv4优先
+执行以下脚本可临时禁用ipv6，重启vps即可恢复
 
 ```bash
-wget -4 -O preferipv4.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/preferipv4.sh && chmod +x preferipv4.sh && ./preferipv4.sh
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 ```
 
 <br>
