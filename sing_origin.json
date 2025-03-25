@@ -50,16 +50,35 @@
       },
       {
         "domain_regex": [  // 走 SOCKS 代理的域名（有需要可以继续添加）
-          "openai.com", "oaiusercontent.com",  // OpenAI
-          "google.com", "gstatic.com", "googleapis.com", "googleusercontent.com", "gvt1.com", "ggpht.com", "googlevideo.com",  // Google
-          "ytimg.com", "youtube.com",  // YouTube
-          "instagram.com", "cdninstagram.com", "facebook.com", "fbcdn.net", "fbsbx.com", "instagramad.com", "akamaihd.net",  // 社交媒体
-          "stripe.com", "amazon.com",  // 支付
-          "cloudflare.com",  // 云服务
-          "intercom.io",  // 客服
-          "pypi.org", "npmjs.com", "sentry.io",  // 开发工具
-          "diwodiwo.xyz", "hanime1.me",  // 其他
-          "browserscan.net", "ipleak.net"  // IP 检测
+          "openai.com", // OpenAI
+          "oaiusercontent.com", 
+          "google.com", // Google
+          "gstatic.com", 
+          "googleapis.com", 
+          "googleusercontent.com",
+          "gvt1.com", 
+          "ggpht.com", 
+          "googlevideo.com", 
+          "ytimg.com", // YouTube
+          "youtube.com", 
+          "instagram.com", // 社交媒体
+          "cdninstagram.com", 
+          "facebook.com", 
+          "fbcdn.net", 
+          "fbsbx.com", 
+          "instagramad.com", 
+          "akamaihd.net", 
+          "stripe.com", // 支付
+          "amazon.com", 
+          "cloudflare.com", // 云服务
+          "intercom.io", // 客服
+          "pypi.org", // 开发工具
+          "npmjs.com", 
+          "sentry.io", 
+          "diwodiwo.xyz", // 其他
+          "hanime1.me", 
+          "browserscan.net", // IP 检测
+          "ipleak.net" 
         ],
         "outbound": "socks_proxy"
       },
