@@ -25,14 +25,13 @@
       {
         "domain_regex": [  // 拦截的域名规则（有需要可以继续添加）
           "(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
-          "(.+.|^)(360|so).(cn|com)",
+          "(.+.|^)(360|so).(cn|com|net)",
           "(Subject|HELO|SMTP)",
           "(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)",
           "(^.@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)",
           "(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
           "(..||)(dafahao|mingjinglive|botanwang|minghui|dongtaiwang|falunaz|epochtimes|ntdtv|falundafa|falungong|wujieliulan|zhengjian).(org|com|net)",
           "(ed2k|.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=|magnet:|xunlei|sandai|Thunder|XLLiveUD|bt_key)",
-          "(.+.|^)(360).(cn|com|net)",
           "(.*.||)(guanjia.qq.com|qqpcmgr|QQPCMGR)",
           "(.*.||)(rising|kingsoft|duba|xindubawukong|jinshanduba).(com|net|org)",
           "(.*.||)(netvigator|torproject).(com|cn|net|org)",
