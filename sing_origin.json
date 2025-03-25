@@ -1,16 +1,16 @@
 {
   "outbounds": [
     {
-      "tag": "direct",
+      "tag": "direct",   // 直接连接
       "type": "direct",
       "domain_strategy": "prefer_ipv4"
     },
     {
-      "type": "block",
-      "tag": "block"
+      "tag": "block",    // 阻止访问
+      "type": "block"
     },
     {
-      "tag": "socks_proxy",
+      "tag": "socks_proxy",  // SOCKS 代理
       "type": "socks",
       "server": "127.0.0.1",
       "server_port": 40000
@@ -19,88 +19,58 @@
   "route": {
     "rules": [
       {
-        "ip_is_private": true,
+        "ip_is_private": true,  // 局域网流量拦截
         "outbound": "block"
       },
       {
-        "domain_regex": [
-            "(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
-            "(.+.|^)(so).(cn|com)",
-            "(.+.|^)(qq).(cn|com)",
-            "(.+.|^)(myqcloud).(cn|com)",
-            ".(wexin).",
-            "(.+.|^)(alipay).(cn|com)",
-            "(.+.|^)(taobao).(cn|com)",
-            "(.+.|^)(jd).(cn|com)",
-            "(.+.|^)(pinduoduo|yangkeduo).(cn|com)",
-            "(.+.|^)(360).(cn|com|net)",
-            "(.+.|^)(douyin).(cn|com)",
-            "(Subject|HELO|SMTP)",
-            "(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)",
-            "(^.@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)",
-            "(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
-            "(..||)(dafahao|mingjinglive|botanwang|minghui|dongtaiwang|falunaz|epochtimes|ntdtv|falundafa|falungong|wujieliulan|zhengjian).(org|com|net)",
-            "(ed2k|.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=|magnet:|xunlei|sandai|Thunder|XLLiveUD|bt_key)",
-            "(.*.||)(qqpcmgr|QQPCMGR)",
-            "(.*.||)(rising|kingsoft|duba|xindubawukong|jinshanduba).(com|net|org)",
-            "(.*.||)(netvigator|torproject).(com|cn|net|org)",
-            "(..||)(visa|mycard|gash|beanfun|bank).",
-            "(.*.||)(gov|12377|12315|talk.news.pts.org|creaders|zhuichaguoji|efcc.org|cyberpolice|aboluowang|tuidang|epochtimes|zhengjian|110.qq|mingjingnews|inmediahk|xinsheng|breakgfw|chengmingmag|jinpianwang|qi-gong|mhradio|edoors|renminbao|soundofhope|xizang-zhiye|bannedbook|ntdtv|12321|secretchina|dajiyuan|boxun|chinadigitaltimes|dwnews|huaglad|oneplusnews|epochweekly|cn.rfi).(cn|com|org|net|club|net|fr|tw|hk|eu|info|me)",
-            "(.*.||)(miaozhen|cnzz|talkingdata|umeng).(cn|com)",
-            "(.*.||)(mycard).(com|tw)",
-            "(.*.||)(gash).(com|tw)",
-            "(.bank.)",
-            "(.*.||)(pincong).(rocks)",
-            "(.*.||)(laomoe|jiyou|ssss|lolicp|vv1234|0z|4321q|868123|ksweb|mm126).(com|cloud|fun|cn|gs|xyz|cc)",
-            "(flows|miaoko).(pages).(dev)"
+        "domain_regex": [  // 拦截的域名规则（有需要可以继续添加）
+          "(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
+          "(.+.|^)(360|so).(cn|com)",
+          "(Subject|HELO|SMTP)",
+          "(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)",
+          "(^.@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)",
+          "(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+          "(..||)(dafahao|mingjinglive|botanwang|minghui|dongtaiwang|falunaz|epochtimes|ntdtv|falundafa|falungong|wujieliulan|zhengjian).(org|com|net)",
+          "(ed2k|.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=|magnet:|xunlei|sandai|Thunder|XLLiveUD|bt_key)",
+          "(.+.|^)(360).(cn|com|net)",
+          "(.*.||)(guanjia.qq.com|qqpcmgr|QQPCMGR)",
+          "(.*.||)(rising|kingsoft|duba|xindubawukong|jinshanduba).(com|net|org)",
+          "(.*.||)(netvigator|torproject).(com|cn|net|org)",
+          "(..||)(visa|mycard|gash|beanfun|bank).",
+          "(.*.||)(gov|12377|12315|talk.news.pts.org|creaders|zhuichaguoji|efcc.org|cyberpolice|aboluowang|tuidang|epochtimes|zhengjian|110.qq|mingjingnews|inmediahk|xinsheng|breakgfw|chengmingmag|jinpianwang|qi-gong|mhradio|edoors|renminbao|soundofhope|xizang-zhiye|bannedbook|ntdtv|12321|secretchina|dajiyuan|boxun|chinadigitaltimes|dwnews|huaglad|oneplusnews|epochweekly|cn.rfi).(cn|com|org|net|club|net|fr|tw|hk|eu|info|me)",
+          "(.*.||)(miaozhen|cnzz|talkingdata|umeng).(cn|com)",
+          "(.*.||)(mycard).(com|tw)",
+          "(.*.||)(gash).(com|tw)",
+          "(.bank.)",
+          "(.*.||)(pincong).(rocks)",
+          "(.*.||)(taobao).(com)",
+          "(.*.||)(laomoe|jiyou|ssss|lolicp|vv1234|0z|4321q|868123|ksweb|mm126).(com|cloud|fun|cn|gs|xyz|cc)",
+          "(flows|miaoko).(pages).(dev)"
         ],
         "outbound": "block"
       },
       {
-        "domain_regex": [
-             "akamaihd.net",
-             "amazon.com",
-             "auth0.com",
-             "cloudflare.com",
-             "diwodiwo.xyz",
-             "facebook.com",
-             "fbcdn.net",
-             "fbsbx.com",
-             "google.com",
-             "googlevideo.com",
-             "instagram.com",
-             "instagramad.com",
-             "intercom.io",
-             "hanime1.me",
-             "netflix",
-             "npmjs.com",
-             "openai.com",
-             "paramount",
-             "pixiv.net",
-             "pypi.org",
-             "recaptcha.net",
-             "sentry.io",
-             "stripe.com",
-             "wechat.com",
-             "wechatpay.com",
-             "whatsapp",
-             "youtube.com",
-             "ytimg.com",
-             "ipleak.net"
+        "domain_regex": [  // 走 SOCKS 代理的域名（有需要可以继续添加）
+          "openai.com", "oaiusercontent.com",  // OpenAI
+          "google.com", "gstatic.com", "googleapis.com", "googleusercontent.com", "gvt1.com", "ggpht.com", "googlevideo.com",  // Google
+          "ytimg.com", "youtube.com",  // YouTube
+          "instagram.com", "cdninstagram.com", "facebook.com", "fbcdn.net", "fbsbx.com", "instagramad.com", "akamaihd.net",  // 社交媒体
+          "stripe.com", "amazon.com",  // 支付
+          "cloudflare.com",  // 云服务
+          "intercom.io",  // 客服
+          "pypi.org", "npmjs.com", "sentry.io",  // 开发工具
+          "diwodiwo.xyz", "hanime1.me",  // 其他
+          "browserscan.net", "ipleak.net"  // IP 检测
         ],
         "outbound": "socks_proxy"
       },
       {
-        "outbound": "direct",
-        "network": [
-          "udp","tcp"
-        ]
+        "outbound": "direct",  // 其他流量直连
+        "network": ["udp", "tcp"]
       }
     ]
   },
   "experimental": {
-    "cache_file": {
-      "enabled": true
-    }
+    "cache_file": { "enabled": true }  // 启用缓存
   }
 }
